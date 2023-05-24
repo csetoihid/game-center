@@ -5,7 +5,6 @@ import chakraTheme from "@chakra-ui/theme";
 function App() {
   return (
     <Grid
-      bg="white"
       templateAreas={{
         base: `"nav" "main"`,
         lg: `"nav nav" "aside main"`,
@@ -15,13 +14,9 @@ function App() {
         <NavBar></NavBar>
       </GridItem>
       <Show above="lg">
-        <GridItem area="aside" bg="gold">
-          Aside
-        </GridItem>
+        <GridItem area="aside">Aside</GridItem>
       </Show>
-      <GridItem area="main" bg="dodgerblue">
-        Main
-      </GridItem>
+      <GridItem area="main">Main</GridItem>
     </Grid>
   );
 }
