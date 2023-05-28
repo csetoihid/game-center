@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import useGames from "./hooks/useGames";
-import { SimpleGrid } from "@chakra-ui/react";
+import { SimpleGrid, Text } from "@chakra-ui/react";
 import GameCard from "./GameCard";
 
 function GameGrid() {
