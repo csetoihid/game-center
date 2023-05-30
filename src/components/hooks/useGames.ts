@@ -13,5 +13,10 @@ import { Genre } from "./useGenres";
     parent_platforms: { platform: Platform }[];
     metacritic : number;
   }
-const useGames = (selectedGerne: Genre | null) =>useData<Game>('/games', {params:{genres:selectedGerne?.id}},[selectedGerne?.id]);
+const useGames = (selectedGerne: Genre | null, selectedPlatform : Platform | null) =>useData<Game>('/games', {
+  params:{
+    genres:selectedGerne?.id, 
+    platforms:selectedPlatform?.id
+  }},
+  [selectedGerne?.id, selectedPlatform?.id]);
 export default useGames
