@@ -23,8 +23,6 @@ const PlatformSelecter = ({ onSelectPlatform, selectedPlatform }: Props) => {
             {platform.name}
           </MenuItem>
         ))}
-        <MenuItem>1</MenuItem>
-        <MenuItem>2</MenuItem>
       </MenuList>
     </Menu>
   );
